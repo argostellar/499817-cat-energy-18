@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Кэт энерджи: Подбор программы</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <a href="#" class="main-header__logo-link">
+      <img src="img/placeholder-logo.jpg" class="main-header__logo-image" alt="Лого">
+    </a>
+    <a href="#" class="main-header__textlogo-link">
+      <img src="img/placeholder-text-logo.jpg" class="main-header__textlogo-image" alt="Текстовое лого">
+    </a>
+    <nav class="main-header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">Форма</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="forms">
+    <h2 class="forms__title forms__title--main">Подбор программы</h2>
+    <p class="forms__text">Заполните анкету и мы подберём программу питания для вашего кота</p>
+    <form action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <label class="forms__label" for="name">Имя:*</label>
+        <input class="forms__input" type="text" name="name" id="name" placeholder="Барсик" required>
+        <label class="forms__label" for="weight">Вес (кг):*</label>
+        <input class="forms__input" type="text" name="weight" id="weight" placeholder="7" required>
+        <label class="forms__label" for="age">Возраст (лет):</label>
+        <input class="forms__input" type="text" name="age" id="age" placeholder="7">
+      </fieldset>
+      <fieldset>
+        <label class="forms__label" for="weight-loss">Похудение</label>
+        <input class="forms__input" type="radio" name="program" value="weight-loss" id="weight-loss" checked>
+        <label class="forms__label" for="weight-gain">Набор массы</label>
+        <input class="forms__input" type="radio" name="program" value="weight-gain" id="weight-gain">
+        <label class="forms__label" for="need-advice">Не знаю (нужен ваш совет)</label>
+        <input class="forms__input" type="radio" name="program" value="need-advice" id="need-advice">
+      </fieldset>
+      <fieldset>
+        <h3 class="forms__title">Контактные данные (владельца кота)</h3>
+        <label class="forms__label" for="email">E-mail:*</label>
+        <input class="forms__input" type="mail" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+        <label class="forms__label" for="phone">Телефон:*</label>
+        <input class="forms__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+      </fieldset>
+      <fieldset>
+        <h3 class="forms__title">Комментарий</h3>
+        <textarea class="forms__comments">Расскажите обо всех повадках кота</textarea>
+      </fieldset>
+      <fieldset>
+        <h3 class="forms__title">Дополнительно</h3>
+        <label class="forms__label">Сахарозаменитель</label>
+        <input class="forms__input" type="checkbox" name="sweetener" checked>
+        <label class="forms__label">Питьевая вода</label>
+        <input class="forms__input" type="checkbox" name="drinking water">
+        <label class="forms__label">Молоко</label>
+        <input class="forms__input" type="checkbox" name="milk">
+        <label class="forms__label">Витамины</label>
+        <input class="forms__input" type="checkbox" name="vitamins">
+      </fieldset>
+      <button class="forms__button" type="submit">Отправить заявку</button>
+      <p class="forms__text forms__text--small">* - Обязательные поля</p>
+    </form>
+  </main>
+  <footer class="main-footer">
+    <section class="map">
+      <h3 class="visually-hidden">Map</h3>
+      <div class="map__info">
+        <p class="map__invitation-text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="map__address">Ул. Большая Конюшенная, д.19/8 Санкт-Петербург</p>
+      </div>
+      <div class="map__map">Map</div>
+    </section>
+    <p class="main-footer__text-logo">CAT ENERGY текстовое лого</p>
+    <ul class="main-footer__social social">
+      <li class="social__item">
+        <a class="social__link" href="#nowhere">Вконтакте</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#nowhere">Instagram</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#nowhere">Facebook</a>
+      </li>
+    </ul>
+    <div class="main-footer__developers developers">
+      <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/html-academy-logo.png" class="developers__image" alt="HTML Academy Logo">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
