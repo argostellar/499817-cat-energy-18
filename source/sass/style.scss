@@ -1,7 +1,8 @@
 @import 'variables.scss';
 @import 'mixins.scss';
-@import 'blocks/main-header.scss';
+@import 'blocks/button.scss';
 @import 'blocks/visually-hidden.scss';
+@import 'blocks/main-header.scss';
 @import 'blocks/nav.scss';
 @import 'blocks/promo.scss';
 @import 'blocks/options.scss';
@@ -12,7 +13,13 @@
 @import 'blocks/map.scss';
 @import 'blocks/social.scss';
 @import 'blocks/developers';
-@import 'blocks/button.scss';
+@import 'blocks/catalog.scss';
+@import 'blocks/bonus.scss';
+@import 'blocks/card.scss';
+@import 'blocks/extra.scss';
+@import 'blocks/product-cards.scss';
+@import 'blocks/table.scss';
+@import 'blocks/forms.scss';
 
 body {
   background-color: #ffffff;
@@ -26,3 +33,9 @@ body {
 
   outline: 1px solid black;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+

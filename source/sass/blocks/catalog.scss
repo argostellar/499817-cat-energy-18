@@ -1,0 +1,11 @@
+.catalog {}
+
+.catalog__title {
+  @include title;
+}
+
+.catalog__product-cards {}
+
+.catalog__extra-items {}
+
+.catalog__bonus {}
