@@ -1,6 +1,15 @@
 @import 'blocks/main-header.scss';
+@import 'blocks/visually-hidden.scss';
+@import 'blocks/nav.scss';
+@import 'variables.scss';
 
 body {
-  background-color: rgba(#302682, 0.5%);
+  background-color: #ffffff;
 
+  font-family: 'Oswald', 'Open-Sans', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+
+  max-width: $mobile-size;
 }
