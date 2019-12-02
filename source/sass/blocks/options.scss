@@ -1,0 +1,51 @@
+.options {}
+
+.options__item {
+  background-color: #f2f2f2;
+
+  padding: 20px;
+
+  margin: 20px;
+}
+
+.options__wrapper {
+  border-bottom: 1px solid #ededed;
+}
+
+.options__title {
+  font-size: 24px;
+  line-height: 37,02px;
+  font-weight: 400;
+
+  margin: 0;
+  padding: 0;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.options__text {
+  @include arial-text;
+}
+
+.options__link {
+  display: inline-block;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+
+  margin-top: 20px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #111111;
+
+  vertical-align: middle;
+}
+
+
+

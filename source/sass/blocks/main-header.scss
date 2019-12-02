@@ -3,36 +3,29 @@
 .main-header {
   display: flex;
   flex-direction: column;
+
+  box-sizing: border-box;
+  border-bottom: 1px solid #fafafa;
 }
 
 .main-header__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+  border-bottom: 1px solid #fafafa;
 }
 
 .main-header__button {
+  width: 18px;
+  height: 18px;
+
   color: $green;
-  position: relative;
-
-    &::before {
-    content: '';
-    border-left: 3px solid black;
-
-    top: 0;
-    left: 0;
-
-    transform: rotate(-45deg);
-    }
-
-    &::after {
-    content: '';
-    border-right: 3px solid black;
-
-    top: 0;
-    left: 0;
-
-    transform: rotate(45deg);
-    }
+  border-style: none;
+  background-color: #ffffff;
+  background-image: url(../../img/m-close.png);
+  background-repeat: no-repeat;
 }
 
