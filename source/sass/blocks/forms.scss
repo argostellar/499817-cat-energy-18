@@ -15,12 +15,15 @@
   @include flex-column;
 }
 
-.forms__inner-wrapper {}
+.forms__inner-wrapper {
+  @include empty-rule;
+}
 
 .forms__title {
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+
   &--main {
     @include title;
   }
@@ -30,6 +33,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
   &--small {
     @include arial-text;
     text-transform: none;
@@ -46,7 +50,7 @@
 }
 
 .forms__input {
-
+  @include empty-rule;
 }
 
 .forms__comment {

@@ -1,4 +1,6 @@
-.nav {}
+.nav {
+  @include empty-rule;
+}
 
 .nav__list {
   list-style: none;
@@ -14,11 +16,10 @@
 
 .nav__item {
   margin: 0;
-  padding: 0;
 
   flex-grow: 1;
 
-  padding: 23px 0px;
+  padding: 23px 0;
 
   box-sizing: border-box;
   border-bottom: 1px solid #fafafa;

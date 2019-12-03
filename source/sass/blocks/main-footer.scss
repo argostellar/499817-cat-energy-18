@@ -5,12 +5,18 @@
   background-color: #f2f2f2;
 }
 
-.main-footer__map {}
+.main-footer__map {
+  @include empty-rule;
+}
 
 .main-footer__text-logo {
   align-self: center;
 }
 
-.main-footer__social {}
+.main-footer__social {
+  @include empty-rule;
+}
 
-.main-footer__developers {}
+.main-footer__developers {
+  @include empty-rule;
+}

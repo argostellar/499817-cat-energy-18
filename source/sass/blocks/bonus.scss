@@ -1,4 +1,6 @@
-.bonus {}
+.bonus {
+  @include flex-column;
+}
 
 .bonus__wrapper {
   width: 280px;
@@ -8,7 +10,7 @@
   justify-content: space-around;
   align-items: center;
 
-  background-image: url('../../img/gift-photo-mobile@1x.jpg');
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 

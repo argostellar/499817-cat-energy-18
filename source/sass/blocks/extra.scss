@@ -1,4 +1,6 @@
-.extra {}
+.extra {
+  @include empty-rule;
+}
 
 .extra__title {
   font-size: 24px;
@@ -6,6 +8,7 @@
   font-weight: 400;
 
   margin-bottom: 30px;
+
   &--item {
     font-size: 16px;
     line-height: 16px;
@@ -35,7 +38,9 @@
   margin-bottom: 14px;
 }
 
-.extra__table-row {}
+.extra__table-row {
+  outline: 1px solid transparent;
+}
 
 .extra__table-cell {
   @include arial-text;

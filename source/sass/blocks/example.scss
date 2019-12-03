@@ -1,4 +1,6 @@
-.example {}
+.example {
+  @include empty-rule;
+}
 
 .example__title {
   @include title;
@@ -44,4 +46,6 @@
   text-align: center;
 }
 
-.example__slider {}
+.example__slider {
+  @include empty-rule;
+}

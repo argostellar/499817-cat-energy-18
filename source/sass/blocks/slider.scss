@@ -1,4 +1,6 @@
-.slider {}
+.slider {
+  @include empty-rule;
+}
 
 .slider__wrapper {
   display: flex;
@@ -6,7 +8,9 @@
   justify-content: space-around;
 }
 
-.slider__image {}
+.slider__image {
+  @include empty-rule;
+}
 
 .slider__image--hidden {
   display: none;

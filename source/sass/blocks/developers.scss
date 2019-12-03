@@ -6,10 +6,12 @@
 }
 
 .developers__link {
-  text-decoration: none;
   @include arial-text;
+  text-decoration: none;
   font-size: 16px;
   line-height: 16px;
 }
 
-.developers__image {}
+.developers__image {
+  @include empty-rule;
+}

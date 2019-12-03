@@ -8,8 +8,14 @@
   @include title;
 }
 
-.catalog__product-cards {}
+.catalog__product-cards {
+  @include empty-rule;
+}
 
-.catalog__extra-items {}
+.catalog__extra-items {
+  @include empty-rule;
+}
 
-.catalog__bonus {}
+.catalog__bonus {
+  @include empty-rule;
+}

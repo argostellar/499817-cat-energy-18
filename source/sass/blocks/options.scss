@@ -1,4 +1,6 @@
-.options {}
+.options {
+  @include empty-rule;
+}
 
 .options__item {
   background-color: #f2f2f2;
@@ -14,7 +16,7 @@
 
 .options__title {
   font-size: 24px;
-  line-height: 37,02px;
+  line-height: 37, 02px;
   font-weight: 400;
 
   margin: 0;

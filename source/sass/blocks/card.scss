@@ -19,7 +19,9 @@
   outline: 2px solid rgba(red, 0.5%);
 }
 
-.card__image {}
+.card__image {
+  height: 100%;
+}
 
 .card__table-wrapper {
   outline: 2px solid rgba(red, 0.5%);
@@ -29,9 +31,13 @@
   justify-content: center;
 }
 
-.card__title {}
+.card__title {
+  @include empty-rule;
+}
 
-.card__table {}
+.card__table {
+  @include empty-rule;
+}
 
 .card__button {
   font-size: 16px;

@@ -1,4 +1,6 @@
-.map {}
+.map {
+  @include empty-rule;
+}
 
 .map__info {
   display: flex;
@@ -19,4 +21,6 @@
   line-height: 20px;
 }
 
-.map__map {}
+.map__map {
+  @include empty-rule;
+}

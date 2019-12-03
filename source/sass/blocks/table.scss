@@ -1,11 +1,10 @@
 .table {
-  margin: 0;
-  padding: 0;
-
-  border-spacing: 5px 0px;
+  border-spacing: 5px 1px;
 }
 
-.table__row {}
+.table__row {
+  @include empty-rule;
+}
 
 .table__cell {
   @include arial-text;
@@ -13,7 +12,8 @@
   line-height: 16px;
 
   outline: 1px solid black;
-    &--left {
-      padding-left: 10px;
-    }
+
+  &--left {
+    padding-left: 10px;
+  }
 }

@@ -1,5 +1,5 @@
 @mixin arial-text {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -30,4 +30,8 @@
 @mixin flex-row {
   display: flex;
   flex-direction: row;
+}
+
+@mixin empty-rule {
+  outline: 1px solid transparent;
 }
