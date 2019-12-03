@@ -1,6 +1,38 @@
 .bonus {}
 
-.bonus__image {}
+.bonus__wrapper {
+  width: 280px;
+  height: 289px;
 
-.bonus__text {}
+  @include flex-column;
+  justify-content: space-around;
+  align-items: center;
+
+  background-image: url('../../img/gift-photo-mobile@1x.jpg');
+  background-repeat: no-repeat;
+}
+
+.bonus__gift-icon {
+  width: 61px;
+  height: 61px;
+
+  box-sizing: border-box;
+  border: 1px solid white;
+
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: white;
+}
+
+.bonus__text {
+  @include arial-text;
+  max-width: 165px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: center;
+  vertical-align: middle;
+}
 
