@@ -1,0 +1,28 @@
+.slider {
+  @include empty-rule;
+}
+
+.slider__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.slider__image {
+  @include empty-rule;
+}
+
+.slider__image--hidden {
+  display: none;
+}
+
+.slider__button {
+  border: none;
+  background-color: transparent;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+
+  text-transform: uppercase;
+}

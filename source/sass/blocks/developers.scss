@@ -1,0 +1,17 @@
+.developers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.developers__link {
+  @include arial-text;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.developers__image {
+  @include empty-rule;
+}

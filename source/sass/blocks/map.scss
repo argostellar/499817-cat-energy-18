@@ -1,0 +1,26 @@
+.map {
+  @include empty-rule;
+}
+
+.map__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.map__invitation-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+
+  text-transform: uppercase;
+}
+
+.map__address {
+  @include arial-text;
+  line-height: 20px;
+}
+
+.map__map {
+  @include empty-rule;
+}

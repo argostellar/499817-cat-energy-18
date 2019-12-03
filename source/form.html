@@ -4,26 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>Кэт энерджи: Подбор программы</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
-    <a href="#" class="main-header__logo-link">
-      <img src="img/placeholder-logo.jpg" class="main-header__logo-image" alt="Лого">
-    </a>
-    <a href="#" class="main-header__textlogo-link">
-      <img src="img/placeholder-text-logo.jpg" class="main-header__textlogo-image" alt="Текстовое лого">
-    </a>
+    <div class="main-header__wrapper">
+      <a href="#" class="main-header__logo-link">
+        <img src="img/logo-mobile.png" class="main-header__logo-image" alt="Логотип Кэт Энерджи" width="33" height="38">
+      </a>
+      <a href="#" class="main-header__textlogo-link">
+        <img src="img/logo-mobile-header.png" class="main-header__textlogo-image" alt="Текстовый логотип Кэт Энерджи" width="101" height="18">
+      </a>
+      <button class="main-header__button" type="button">
+        <span class="visually-hidden">Close</span>
+      </button>
+    </div>
     <nav class="main-header__nav nav">
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="index.html">Главная</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="catalog.html">Каталог</a>
+          <a class="nav__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="form.html">Форма</a>
+          <a class="nav__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -31,51 +38,85 @@
   <main class="forms">
     <h2 class="forms__title forms__title--main">Подбор программы</h2>
     <p class="forms__text">Заполните анкету и мы подберём программу питания для вашего кота</p>
-    <form action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <label class="forms__label" for="name">Имя:*</label>
-        <input class="forms__input" type="text" name="name" id="name" placeholder="Барсик" required>
-        <label class="forms__label" for="weight">Вес (кг):*</label>
-        <input class="forms__input" type="text" name="weight" id="weight" placeholder="7" required>
-        <label class="forms__label" for="age">Возраст (лет):</label>
-        <input class="forms__input" type="text" name="age" id="age" placeholder="7">
+    <form class="forms__main-form" action="https://echo.htmlacademy.ru">
+      <fieldset class="forms__fieldset">
+        <div class="forms__wrapper">
+          <div class="forms__inner-wrapper">
+            <label class="forms__label" for="name">Имя:*</label>
+            <input class="forms__input" type="text" name="name" id="name" placeholder="Барсик" required>
+          </div>
+          <div class="forms__inner-wrapper">
+            <label class="forms__label" for="weight">Вес (кг):*</label>
+            <input class="forms__input" type="text" name="weight" id="weight" placeholder="7" required>
+          </div>
+          <div class="forms__inner-wrapper">
+            <label class="forms__label" for="age">Возраст (лет):</label>
+            <input class="forms__input" type="text" name="age" id="age" placeholder="7">
+          </div>
+        </div>
       </fieldset>
-      <fieldset>
-        <label class="forms__label" for="weight-loss">Похудение</label>
-        <input class="forms__input" type="radio" name="program" value="weight-loss" id="weight-loss" checked>
-        <label class="forms__label" for="weight-gain">Набор массы</label>
-        <input class="forms__input" type="radio" name="program" value="weight-gain" id="weight-gain">
-        <label class="forms__label" for="need-advice">Не знаю (нужен ваш совет)</label>
-        <input class="forms__input" type="radio" name="program" value="need-advice" id="need-advice">
+      <fieldset class="forms__fieldset">
+        <div class="forms__wrapper">
+          <div class="forms__inner-wrapper">
+            <label class="forms__label" for="weight-loss">Похудение</label>
+            <input class="forms__input" type="radio" name="program" value="weight-loss" id="weight-loss" checked>
+          </div>
+          <div class="forms__inner-wrapper">
+            <label class="forms__label" for="weight-gain">Набор массы</label>
+            <input class="forms__input" type="radio" name="program" value="weight-gain" id="weight-gain">
+          </div>
+          <div class="forms__inner-wrapper">
+            <label class="forms__label" for="need-advice">Не знаю (нужен ваш совет)</label>
+            <input class="forms__input" type="radio" name="program" value="need-advice" id="need-advice">
+          </div>
+        </div>
       </fieldset>
-      <fieldset>
-        <h3 class="forms__title">Контактные данные (владельца кота)</h3>
-        <label class="forms__label" for="email">E-mail:*</label>
-        <input class="forms__input" type="mail" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-        <label class="forms__label" for="phone">Телефон:*</label>
-        <input class="forms__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+      <fieldset class="forms__fieldset">
+        <div class="forms__wrapper">
+          <h3 class="forms__title">Контактные данные (владельца кота)</h3>
+          <div class="forms__inner-wrapper">
+            <label class="forms__label" for="email">E-mail:*</label>
+            <input class="forms__input" type="mail" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+          </div>
+          <div class="forms__inner-wrapper">
+            <label class="forms__label" for="phone">Телефон:*</label>
+            <input class="forms__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+          </div>
+        </div>
       </fieldset>
-      <fieldset>
-        <h3 class="forms__title">Комментарий</h3>
-        <textarea class="forms__comments">Расскажите обо всех повадках кота</textarea>
+      <fieldset class="forms__fieldset">
+        <div class="forms__wrapper">
+          <h3 class="forms__title">Комментарий</h3>
+          <textarea class="forms__comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </fieldset>
-      <fieldset>
-        <h3 class="forms__title">Дополнительно</h3>
-        <label class="forms__label">Сахарозаменитель</label>
-        <input class="forms__input" type="checkbox" name="sweetener" checked>
-        <label class="forms__label">Питьевая вода</label>
-        <input class="forms__input" type="checkbox" name="drinking water">
-        <label class="forms__label">Молоко</label>
-        <input class="forms__input" type="checkbox" name="milk">
-        <label class="forms__label">Витамины</label>
-        <input class="forms__input" type="checkbox" name="vitamins">
+      <fieldset class="forms__fieldset">
+        <div class="forms__wrapper">
+          <h3 class="forms__title">Дополнительно</h3>
+          <div class="forms__inner-wrapper">
+            <label class="forms__label" for="sweetener-item">Сахарозаменитель</label>
+            <input class="forms__input" type="checkbox" name="sweetener" id="sweetener-item" checked>
+          </div>
+          <div class="forms__inner-wrapper">
+            <label class="forms__label" for="drinking-water-item">Питьевая вода</label>
+            <input class="forms__input" type="checkbox" name="drinking water" id="drinking-water-item">
+          </div>
+          <div class="forms__inner-wrapper">
+            <label class="forms__label" for="milk-item">Молоко</label>
+            <input class="forms__input" type="checkbox" name="milk" id="milk-item">
+          </div>
+          <div class="forms__inner-wrapper">
+            <label class="forms__label" for="vitamins-item">Витамины</label>
+            <input class="forms__input" type="checkbox" name="vitamins" id="vitamins-item">
+          </div>
+        </div>
       </fieldset>
-      <button class="forms__button" type="submit">Отправить заявку</button>
+      <button class="forms__button button" type="submit">Отправить заявку</button>
       <p class="forms__text forms__text--small">* - Обязательные поля</p>
     </form>
   </main>
   <footer class="main-footer">
-    <section class="map">
+    <section class="main-footer__map map">
       <h3 class="visually-hidden">Map</h3>
       <div class="map__info">
         <p class="map__invitation-text">Приглашаем к сотрудничеству дилеров!</p>
@@ -84,21 +125,29 @@
       <div class="map__map">Map</div>
     </section>
     <p class="main-footer__text-logo">CAT ENERGY текстовое лого</p>
-    <ul class="main-footer__social social">
-      <li class="social__item">
-        <a class="social__link" href="#nowhere">Вконтакте</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#nowhere">Instagram</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#nowhere">Facebook</a>
-      </li>
-    </ul>
+    <div class="main-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#nowhere">VK
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#nowhere">IN
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#nowhere">FB
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="main-footer__developers developers">
       <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/html-academy-logo.png" class="developers__image" alt="HTML Academy Logo">
+        <img src="img/htmlacademy.svg" class="developers__image" alt="HTML Academy Logo" width="27" height="34">
       </a>
     </div>
   </footer>

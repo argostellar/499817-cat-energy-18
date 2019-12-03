@@ -1,0 +1,19 @@
+.table {
+  border-spacing: 5px 1px;
+}
+
+.table__row {
+  @include empty-rule;
+}
+
+.table__cell {
+  @include arial-text;
+  font-size: 12px;
+  line-height: 16px;
+
+  outline: 1px solid black;
+
+  &--left {
+    padding-left: 10px;
+  }
+}

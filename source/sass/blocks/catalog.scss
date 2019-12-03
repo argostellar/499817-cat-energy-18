@@ -1,0 +1,21 @@
+.catalog {
+  @include flex-column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.catalog__title {
+  @include title;
+}
+
+.catalog__product-cards {
+  @include empty-rule;
+}
+
+.catalog__extra-items {
+  @include empty-rule;
+}
+
+.catalog__bonus {
+  @include empty-rule;
+}

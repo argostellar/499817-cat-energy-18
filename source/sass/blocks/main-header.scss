@@ -1,0 +1,28 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.main-header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.main-header__button {
+  width: 18px;
+  height: 18px;
+
+  color: $green;
+  border-style: none;
+  background-color: #ffffff;
+  background-image: url("../img/m-close.png");
+  background-repeat: no-repeat;
+}

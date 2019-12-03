@@ -1,0 +1,36 @@
+.advantages {
+  padding: 10px;
+}
+
+.advantages__title {
+  @include title;
+}
+
+.advantages__list {
+  @include clear-list;
+}
+
+.advantages__item {
+  margin: 10px 0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+}
+
+.advantages__image {
+  background-color: $green;
+
+  width: 60px;
+  height: 60px;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.advantages__text {
+  margin-left: auto;
+  margin-right: 0;
+
+  @include arial-text;
+}

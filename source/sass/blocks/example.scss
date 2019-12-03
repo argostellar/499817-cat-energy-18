@@ -1,0 +1,51 @@
+.example {
+  @include empty-rule;
+}
+
+.example__title {
+  @include title;
+}
+
+.example__text {
+  @include arial-text;
+}
+
+.example__outer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.example__inner-wrapper {
+  border-radius: 3px;
+  border: 1px solid #cdcdcd;
+}
+
+.example__central-text {
+  font-size: 24px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__description-text {
+  @include arial-text;
+  font-size: 12px;
+  line-height: 12px;
+
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.example__result-text {
+  font-size: 14px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__slider {
+  @include empty-rule;
+}

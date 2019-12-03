@@ -1,0 +1,45 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  outline: 2px solid rgba(red, 0.5%);
+
+  box-sizing: border-box;
+  border-top: 1px solid #ededed;
+}
+
+.card__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card__image-wrapper {
+  outline: 2px solid rgba(red, 0.5%);
+}
+
+.card__image {
+  height: 100%;
+}
+
+.card__table-wrapper {
+  outline: 2px solid rgba(red, 0.5%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__title {
+  @include empty-rule;
+}
+
+.card__table {
+  @include empty-rule;
+}
+
+.card__button {
+  font-size: 16px;
+  line-height: 20px;
+}
