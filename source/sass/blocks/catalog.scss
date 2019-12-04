@@ -2,6 +2,7 @@
   @include flex-column;
   justify-content: space-around;
   align-items: center;
+  margin: 0 20px;
 }
 
 .catalog__title {
@@ -16,6 +17,23 @@
   @include empty-rule;
 }
 
-.catalog__bonus {
-  @include empty-rule;
+@media (min-width: $tablet-size) {
+  .catalog {
+    display: block;
+    margin: 0 30px;
+  }
+
+  .catalog__title {
+    @include tablet-title-font;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 150px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .catalog {
+    margin: 0 110px;
+    max-width: 1220px;
+  }
 }

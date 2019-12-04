@@ -3,8 +3,7 @@
 }
 
 .map__info {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   justify-content: space-between;
 }
 
@@ -52,5 +51,32 @@
 @media (min-width: $desktop-size) {
   .map {
     @include empty-rule;
+    position: relative;
+  }
+
+  .map__info {
+    width: 570px;
+    height: 201px;
+
+    padding: 60px 75px;
+    box-sizing: border-box;
+
+    position: absolute;
+
+    left: 40px;
+    top: 95px;
+
+    background-color: $white;
+  }
+
+  .map__invitation-text {
+    margin: 0;
+    margin-left: 0;
+  }
+
+  .map__address {
+    margin: 0;
+    margin-right: 0;
+    text-align: left;
   }
 }
