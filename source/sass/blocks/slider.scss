@@ -1,10 +1,9 @@
 .slider {
-  @include empty-rule;
+  @include flex-column;
 }
 
 .slider__wrapper {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   justify-content: space-around;
 }
 
@@ -20,9 +19,37 @@
   border: none;
   background-color: transparent;
 
+  @include font-family;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
 
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-size) {
+  .slider {
+    background-color: #eaeaea;
+    min-height: 462px;
+    justify-content: flex-end;
+  }
+
+  .slider__image {
+    align-self: center;
+  }
+
+  .slider__wrapper {
+    margin-top: 13px;
+    margin-bottom: 68px;
+  }
+
+  .slider__button {
+    @include tablet-text-font;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .slider {
+    width: 650px;
+  }
 }

@@ -22,5 +22,35 @@
 }
 
 .map__map {
-  @include empty-rule;
+  @include yellowline;
+  min-width: 280px;
+  min-height: 362px;
+  background-color: #f2f1ee;
+}
+
+@media (min-width: $tablet-size) {
+  .map {
+    @include empty-rule;
+  }
+
+  .map__invitation-text {
+    margin-left: 40px;
+    max-width: 160px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .map__address {
+    @include tablet-arial-text;
+    margin-right: 40px;
+    max-width: 160px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .map {
+    @include empty-rule;
+  }
 }
