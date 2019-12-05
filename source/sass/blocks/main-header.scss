@@ -29,8 +29,8 @@
 
 @media (min-width: $tablet-size) {
   .main-header {
-    flex-direction: row;
-    margin: 0 30px;
+    @include flex-row;
+    @include tablet-space;
   }
 
   .main-header__wrapper {
@@ -53,7 +53,6 @@
 @media (min-width: $desktop-size) {
   .main-header {
     @include redline;
-    margin: 0 110px;
-    max-width: 1220px;
+    @include desktop-space;
   }
 }

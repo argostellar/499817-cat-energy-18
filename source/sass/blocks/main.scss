@@ -1,16 +1,15 @@
 .main {
-  margin: 0 20px;
+  @include mobile-space;
 }
 
 @media (min-width: $tablet-size) {
   .main {
-    margin: 0 30px;
+    @include tablet-space;
   }
 }
 
 @media (min-width: $desktop-size) {
   .main {
-    margin: 0 110px;
-    max-width: 1220px;
+    @include desktop-space;
   }
 }

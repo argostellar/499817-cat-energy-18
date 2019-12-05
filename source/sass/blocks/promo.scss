@@ -98,6 +98,23 @@
     @include redline;
   }
 
+  .promo::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    min-height: 696px;
+    top: 0;
+    right: 0;
+    left: inherit;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-color: $green;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+
   .promo__image {
     align-self: flex-end;
   }

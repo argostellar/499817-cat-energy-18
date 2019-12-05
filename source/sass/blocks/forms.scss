@@ -1,6 +1,6 @@
 .forms {
   @include flex-column;
-  margin: 0 20px;
+  @include mobile-space;
 }
 
 .forms__main-form {
@@ -104,7 +104,7 @@
 
 @media (min-width: $tablet-size) {
   .forms {
-    margin: 0 30px;
+    @include tablet-space;
   }
 
   .forms__wrapper {
@@ -191,8 +191,7 @@
 
 @media (min-width: $desktop-size) {
   .forms {
-    margin: 0 110px;
-    max-width: 1220px;
+    @include desktop-space;
   }
 
   .forms__outer-wrapper {
