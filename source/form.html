@@ -39,80 +39,84 @@
     <h2 class="forms__title forms__title--main">Подбор программы</h2>
     <p class="forms__text">Заполните анкету и мы подберём программу питания для вашего кота</p>
     <form class="forms__main-form" action="https://echo.htmlacademy.ru">
+      <div class="forms__outer-wrapper">
+        <fieldset class="forms__fieldset forms__fieldset--top">
+          <div class="forms__wrapper forms__wrapper--personal">
+            <div class="forms__inner-wrapper">
+              <label class="forms__label" for="name">Имя:*</label>
+              <input class="forms__input-personal" type="text" name="name" id="name" placeholder="Барсик" required>
+            </div>
+            <div class="forms__inner-wrapper">
+              <label class="forms__label" for="weight">Вес (кг):*</label>
+              <input class="forms__input-personal" type="text" name="weight" id="weight" placeholder="7" required>
+            </div>
+            <div class="forms__inner-wrapper">
+              <label class="forms__label" for="age">Возраст (лет):</label>
+              <input class="forms__input-personal" type="text" name="age" id="age" placeholder="7">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="forms__fieldset forms__fieldset--top">
+          <div class="forms__wrapper forms__wrapper--program">
+            <div class="forms__inner-wrapper">
+              <label class="forms__label" for="weight-loss">Похудение</label>
+              <input class="forms__input forms__input--radio" type="radio" name="program" value="weight-loss" id="weight-loss" checked>
+            </div>
+            <div class="forms__inner-wrapper">
+              <label class="forms__label" for="weight-gain">Набор массы</label>
+              <input class="forms__input forms__input--radio" type="radio" name="program" value="weight-gain" id="weight-gain">
+            </div>
+            <div class="forms__inner-wrapper">
+              <label class="forms__label forms__input--radio" for="need-advice">Не знаю (нужен ваш совет)</label>
+              <input class="forms__input" type="radio" name="program" value="need-advice" id="need-advice">
+            </div>
+          </div>
+        </fieldset>
+      </div>
       <fieldset class="forms__fieldset">
-        <div class="forms__wrapper">
-          <div class="forms__inner-wrapper">
-            <label class="forms__label" for="name">Имя:*</label>
-            <input class="forms__input" type="text" name="name" id="name" placeholder="Барсик" required>
-          </div>
-          <div class="forms__inner-wrapper">
-            <label class="forms__label" for="weight">Вес (кг):*</label>
-            <input class="forms__input" type="text" name="weight" id="weight" placeholder="7" required>
-          </div>
-          <div class="forms__inner-wrapper">
-            <label class="forms__label" for="age">Возраст (лет):</label>
-            <input class="forms__input" type="text" name="age" id="age" placeholder="7">
-          </div>
-        </div>
-      </fieldset>
-      <fieldset class="forms__fieldset">
-        <div class="forms__wrapper">
-          <div class="forms__inner-wrapper">
-            <label class="forms__label" for="weight-loss">Похудение</label>
-            <input class="forms__input" type="radio" name="program" value="weight-loss" id="weight-loss" checked>
-          </div>
-          <div class="forms__inner-wrapper">
-            <label class="forms__label" for="weight-gain">Набор массы</label>
-            <input class="forms__input" type="radio" name="program" value="weight-gain" id="weight-gain">
-          </div>
-          <div class="forms__inner-wrapper">
-            <label class="forms__label" for="need-advice">Не знаю (нужен ваш совет)</label>
-            <input class="forms__input" type="radio" name="program" value="need-advice" id="need-advice">
-          </div>
-        </div>
-      </fieldset>
-      <fieldset class="forms__fieldset">
-        <div class="forms__wrapper">
-          <h3 class="forms__title">Контактные данные (владельца кота)</h3>
-          <div class="forms__inner-wrapper">
+        <h3 class="forms__title">Контактные данные (владельца кота)</h3>
+        <div class="forms__wrapper forms__wrapper--contacts">
+          <div class="forms__inner-wrapper forms__inner-wrapper--contacts">
             <label class="forms__label" for="email">E-mail:*</label>
-            <input class="forms__input" type="mail" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+            <input class="forms__input-personal forms__input-personal--email" type="mail" name="email" id="email" placeholder="kuklachev@gmail.com" required>
           </div>
-          <div class="forms__inner-wrapper">
+          <div class="forms__inner-wrapper forms__inner-wrapper--contacts">
             <label class="forms__label" for="phone">Телефон:*</label>
-            <input class="forms__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+            <input class="forms__input-personal forms__input-personal--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
           </div>
         </div>
       </fieldset>
       <fieldset class="forms__fieldset">
+        <h3 class="forms__title">Комментарий</h3>
         <div class="forms__wrapper">
-          <h3 class="forms__title">Комментарий</h3>
           <textarea class="forms__comments" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
       <fieldset class="forms__fieldset">
-        <div class="forms__wrapper">
-          <h3 class="forms__title">Дополнительно</h3>
-          <div class="forms__inner-wrapper">
+        <h3 class="forms__title">Дополнительно</h3>
+        <div class="forms__wrapper forms__wrapper--extra">
+          <div class="forms__inner-wrapper forms__inner-wrapper--extra">
             <label class="forms__label" for="sweetener-item">Сахарозаменитель</label>
             <input class="forms__input" type="checkbox" name="sweetener" id="sweetener-item" checked>
           </div>
-          <div class="forms__inner-wrapper">
+          <div class="forms__inner-wrapper forms__inner-wrapper--extra">
             <label class="forms__label" for="drinking-water-item">Питьевая вода</label>
             <input class="forms__input" type="checkbox" name="drinking water" id="drinking-water-item">
           </div>
-          <div class="forms__inner-wrapper">
+          <div class="forms__inner-wrapper forms__inner-wrapper--extra">
             <label class="forms__label" for="milk-item">Молоко</label>
             <input class="forms__input" type="checkbox" name="milk" id="milk-item">
           </div>
-          <div class="forms__inner-wrapper">
+          <div class="forms__inner-wrapper forms__inner-wrapper--extra">
             <label class="forms__label" for="vitamins-item">Витамины</label>
             <input class="forms__input" type="checkbox" name="vitamins" id="vitamins-item">
           </div>
         </div>
       </fieldset>
-      <button class="forms__button button" type="submit">Отправить заявку</button>
-      <p class="forms__text forms__text--small">* - Обязательные поля</p>
+      <div class="forms__submit-wrapper">
+        <button class="forms__button button" type="submit">Отправить заявку</button>
+        <p class="forms__text forms__text--small">* - Обязательные поля</p>
+      </div>
     </form>
   </main>
   <footer class="main-footer">
@@ -122,34 +126,36 @@
         <p class="map__invitation-text">Приглашаем к сотрудничеству дилеров!</p>
         <p class="map__address">Ул. Большая Конюшенная, д.19/8 Санкт-Петербург</p>
       </div>
-      <div class="map__map">Map</div>
+      <div class="map__map">Map - NB: Отступов слева-справа нет</div>
     </section>
-    <p class="main-footer__text-logo">CAT ENERGY текстовое лого</p>
-    <div class="main-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#nowhere">VK
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#nowhere">IN
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#nowhere">FB
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="main-footer__developers developers">
-      <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/htmlacademy.svg" class="developers__image" alt="HTML Academy Logo" width="27" height="34">
-      </a>
-    </div>
+    <section class="main-footer__contacts">
+      <p class="main-footer__text-logo">CAT ENERGY текстовое лого</p>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#nowhere">VK
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#nowhere">IN
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#nowhere">FB
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__developers developers">
+        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/htmlacademy.svg" class="developers__image" alt="HTML Academy Logo" width="27" height="34">
+        </a>
+      </div>
+    </section>
   </footer>
 </body>
 
