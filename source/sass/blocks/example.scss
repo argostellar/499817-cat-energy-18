@@ -4,21 +4,37 @@
 
 .example__title {
   @include title;
+  margin-bottom: 32px;
 }
 
 .example__text {
   @include arial-text;
+  @include reset-space;
+  margin-bottom: 25px;
+}
+
+.example__statistics {
+  @include flex-row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.example__statistics-wrapper {
+  @include flex-column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .example__outer-wrapper {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   justify-content: space-around;
+  width: 100%;
 }
 
 .example__inner-wrapper {
   border-radius: 3px;
   border: 1px solid #cdcdcd;
+  margin: 0 16px;
 }
 
 .example__central-text {
@@ -48,4 +64,93 @@
 
 .example__slider {
   @include empty-rule;
+}
+
+@media (min-width: $tablet-size) {
+  .example {
+    @include empty-rule;
+  }
+
+  .example__title {
+    @include tablet-title-font;
+    margin-bottom: 60px;
+  }
+
+  .example__text {
+    @include tablet-arial-text;
+    margin-bottom: 57px;
+  }
+
+  .example__central-text {
+    font-size: 30px;
+    line-height: 37.02px;
+  }
+
+  .example__description-text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__result-text {
+    @include tablet-text-font;
+    max-width: 180px;
+    text-align: right;
+  }
+
+  .example__statistics {
+    @include empty-rule;
+  }
+
+  .example__statistics-wrapper {
+    @include flex-row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 55px 0;
+  }
+
+  .example__outer-wrapper {
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .example {
+    @include empty-rule;
+  }
+
+  .example__wrapper {
+    @include flex-row;
+    justify-content: space-between;
+    background-color: #eaeaea;
+  }
+
+  .example__statistics {
+    max-width: 570px;
+  }
+
+  .example__statistics-wrapper {
+    @include flex-column;
+    justify-content: space-between;
+    width: 366px;
+  }
+
+  .example__outer-wrapper {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .example__inner-wrapper {
+    margin: 0;
+  }
+
+  .example__text {
+    max-width: 435px;
+    margin-bottom: 72px;
+  }
+
+  .example__result-text {
+    text-align: left;
+    max-width: 100%;
+    align-self: flex-start;
+  }
 }

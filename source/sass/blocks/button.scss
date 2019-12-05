@@ -18,3 +18,9 @@
 
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-size) {
+  .button {
+    @include tablet-text-font;
+  }
+}

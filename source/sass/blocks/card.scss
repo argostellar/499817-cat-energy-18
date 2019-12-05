@@ -1,38 +1,37 @@
 .card {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   justify-content: space-between;
-
-  outline: 2px solid rgba(red, 0.5%);
 
   box-sizing: border-box;
   border-top: 1px solid #ededed;
 }
 
 .card__wrapper {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   justify-content: space-around;
 }
 
 .card__image-wrapper {
-  outline: 2px solid rgba(red, 0.5%);
+  @include redline;
 }
 
 .card__image {
+  @include empty-rule;
   height: 100%;
 }
 
 .card__table-wrapper {
-  outline: 2px solid rgba(red, 0.5%);
-
-  display: flex;
-  flex-direction: column;
+  @include redline;
+  @include flex-column;
   justify-content: center;
 }
 
 .card__title {
-  @include empty-rule;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  max-width: 75px;
 }
 
 .card__table {
@@ -42,4 +41,47 @@
 .card__button {
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-size) {
+  .card {
+    min-width: 324px;
+    background-color: #f2f2f2;
+    min-height: 431px;
+    padding: 40px 37px;
+  }
+
+  .card__wrapper {
+    @include yellowline;
+    @include flex-column;
+  }
+
+  .card__image-wrapper {
+    min-height: 120px;
+  }
+
+  .card__table-wrapper {
+    @include empty-rule;
+  }
+
+  .card__title {
+    @include tablet-text-font;
+    max-width: 110px;
+    text-align: center;
+    align-self: center;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .card {
+    align-items: center;
+  }
+
+  .card__wrapper {
+    width: 169px;
+  }
+
+  .card__button {
+    width: 169px;
+  }
 }

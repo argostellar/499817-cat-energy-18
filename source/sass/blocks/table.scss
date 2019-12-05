@@ -17,3 +17,24 @@
     padding-left: 10px;
   }
 }
+
+@media (min-width: $tablet-size) {
+  .table {
+    @include empty-rule;
+  }
+
+  .table__row {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .table__cell {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .table {
+    @include empty-rule;
+  }
+}

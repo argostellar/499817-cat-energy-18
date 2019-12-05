@@ -3,8 +3,7 @@
 }
 
 .map__info {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   justify-content: space-between;
 }
 
@@ -22,5 +21,62 @@
 }
 
 .map__map {
-  @include empty-rule;
+  @include yellowline;
+  min-width: 280px;
+  min-height: 362px;
+  background-color: #f2f1ee;
+}
+
+@media (min-width: $tablet-size) {
+  .map {
+    @include empty-rule;
+  }
+
+  .map__invitation-text {
+    margin-left: 40px;
+    max-width: 160px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .map__address {
+    @include tablet-arial-text;
+    margin-right: 40px;
+    max-width: 160px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .map {
+    @include empty-rule;
+    position: relative;
+  }
+
+  .map__info {
+    width: 570px;
+    height: 201px;
+
+    padding: 60px 75px;
+    box-sizing: border-box;
+
+    position: absolute;
+
+    left: 40px;
+    top: 95px;
+
+    background-color: $white;
+  }
+
+  .map__invitation-text {
+    margin: 0;
+    margin-left: 0;
+  }
+
+  .map__address {
+    margin: 0;
+    margin-right: 0;
+    text-align: left;
+  }
 }

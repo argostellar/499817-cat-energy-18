@@ -3,8 +3,8 @@
 }
 
 .bonus__wrapper {
-  width: 280px;
-  height: 289px;
+  min-width: 280px;
+  min-height: 289px;
 
   @include flex-column;
   justify-content: space-around;
@@ -12,6 +12,7 @@
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-color: $green;
 }
 
 .bonus__gift-icon {
@@ -30,10 +31,60 @@
 .bonus__text {
   @include arial-text;
   max-width: 165px;
-  color: #ffffff;
+  color: $white;
   font-size: 16px;
   line-height: 20px;
 
   text-align: center;
   vertical-align: middle;
+}
+
+@media (min-width: $tablet-size) {
+  .bonus {
+    @include empty-rule;
+    margin-bottom: 76px;
+    margin-top: 69px;
+  }
+
+  .bonus__wrapper {
+    min-width: 708px;
+    min-height: 200px;
+
+    @include flex-row;
+    justify-content: space-around;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .bonus__text {
+    text-align: left;
+    max-width: 175px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .bonus {
+    @include empty-rule;
+  }
+
+  .bonus__wrapper {
+    min-width: auto;
+    min-height: auto;
+
+    width: 245px;
+    height: 289px;
+
+    @include flex-column;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .bonus__text {
+    text-align: center;
+    max-width: 175px;
+  }
+
+  .bonus__gift-icon {
+    @include empty-rule;
+  }
 }

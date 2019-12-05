@@ -7,7 +7,7 @@
 
   padding: 20px;
 
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .options__wrapper {
@@ -44,7 +44,50 @@
 
   text-decoration: none;
   text-transform: uppercase;
-  color: #111111;
+  color: $black;
 
   vertical-align: middle;
+}
+
+@media (min-width: $tablet-size) {
+  .options {
+    @include empty-rule;
+  }
+
+  .options__item {
+    padding: 50px;
+  }
+
+  .options__wrapper {
+    border-bottom: none;
+  }
+
+  .options__title {
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .options__text {
+    @include tablet-arial-text;
+  }
+
+  .options__link {
+    @include tablet-text-font;
+
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .options {
+    @include flex-row;
+    justify-content: space-between;
+  }
+
+  .options__item {
+    @include redline;
+    max-width: 570px;
+    padding: 50px;
+  }
 }

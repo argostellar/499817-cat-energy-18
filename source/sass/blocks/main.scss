@@ -1,3 +1,15 @@
 .main {
-  @include empty-rule;
+  @include mobile-space;
+}
+
+@media (min-width: $tablet-size) {
+  .main {
+    @include tablet-space;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .main {
+    @include desktop-space;
+  }
 }

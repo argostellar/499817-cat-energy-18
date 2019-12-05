@@ -1,4 +1,5 @@
 .catalog {
+  @include mobile-space;
   @include flex-column;
   justify-content: space-around;
   align-items: center;
@@ -16,6 +17,22 @@
   @include empty-rule;
 }
 
-.catalog__bonus {
-  @include empty-rule;
+@media (min-width: $tablet-size) {
+  .catalog {
+    @include tablet-space;
+    display: block;
+  }
+
+  .catalog__title {
+    @include tablet-title-font;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 150px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .catalog {
+    @include desktop-space;
+  }
 }
