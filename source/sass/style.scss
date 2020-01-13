@@ -23,6 +23,7 @@
 @import "blocks/forms.scss";
 
 body {
+  @include reset-space;
   background-color: #ffffff;
 
   font-family: "Oswald", "Arial", sans-serif;

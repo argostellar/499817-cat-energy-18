@@ -1,9 +1,12 @@
 .advantages {
-  padding: 10px;
+  @include mobile-space;
+  margin-bottom: 59px;
 }
 
 .advantages__title {
   @include title;
+  margin-top: -1px;
+  margin-bottom: 28px;
 }
 
 .advantages__list {
@@ -11,24 +14,28 @@
 }
 
 .advantages__item {
+  @include reset-space;
   @include flex-row;
   flex-wrap: no-wrap;
   justify-content: space-between;
+  align-items: flex-start;
 
-  margin: 10px 0;
+  margin-bottom: 20px;
 }
 
 .advantages__image {
   background-color: $green;
 
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   margin-right: auto;
   margin-left: 0;
 }
 
 .advantages__text {
-  margin-left: auto;
+  @include reset-space;
+  margin-top: 2px;
+  margin-left: 20px;
   margin-right: 0;
 
   @include arial-text;

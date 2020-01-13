@@ -1,22 +1,33 @@
 .example {
-  @include empty-rule;
+  @include mobile-space;
+  background-color: #f2f2f2;
 }
 
 .example__title {
   @include title;
-  margin-bottom: 32px;
+  margin-bottom: 23px;
 }
+
+.example__statistics {
+  @include flex-column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  margin-bottom: 44px;
+}
+
 
 .example__text {
   @include arial-text;
   @include reset-space;
+  max-width: 270px;
   margin-bottom: 25px;
+  margin-left: 0;
+  margin-right: auto;
 }
 
-.example__statistics {
-  @include flex-row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.example__wrapper {
+  @include flex-column;
 }
 
 .example__statistics-wrapper {
@@ -27,34 +38,60 @@
 
 .example__outer-wrapper {
   @include flex-row;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
+  margin-bottom: 35px;
 }
 
 .example__inner-wrapper {
+  @include flex-column;
+  align-items: center;
+
+  position: relative;
+
+  width: 124px;
+
+  box-sizing: border-box;
   border-radius: 3px;
   border: 1px solid #cdcdcd;
-  margin: 0 16px;
 }
 
 .example__central-text {
+  @include reset-space;
   font-size: 24px;
   line-height: 24px;
+
+  margin: 13px 20px;
+  margin-bottom: 16px;
 
   text-transform: uppercase;
   text-align: center;
 }
 
 .example__description-text {
+  @include reset-space;
   @include arial-text;
   font-size: 12px;
   line-height: 12px;
 
+  position: absolute;
+
+  top: 45px;
+
+  max-width: 60px;
+
+  padding: 0 10px;
+
   text-transform: lowercase;
   text-align: center;
+
+  z-index: 2;
+
+  background-color: #f2f2f2;
 }
 
 .example__result-text {
+  @include reset-space;
   font-size: 14px;
   line-height: 20px;
 

@@ -1,5 +1,5 @@
 .options {
-  @include empty-rule;
+  @include mobile-space;
 }
 
 .options__item {
@@ -22,8 +22,8 @@
   margin: 0;
   padding: 0;
 
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 40px;
 
   text-transform: uppercase;
   text-align: center;
@@ -31,6 +31,7 @@
 
 .options__text {
   @include arial-text;
+  margin-bottom: 22px;
 }
 
 .options__link {
@@ -40,7 +41,7 @@
   line-height: 16px;
   font-weight: 400;
 
-  margin-top: 20px;
+  margin-top: 19px;
 
   text-decoration: none;
   text-transform: uppercase;

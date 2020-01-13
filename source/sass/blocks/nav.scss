@@ -6,22 +6,28 @@
   @include clear-list;
   @include flex-column;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 }
 
 .nav__item {
+  @include flex-column;
+  align-items: center;
+  min-height: 66px;
   margin: 0;
 
   flex-grow: 1;
 
-  padding: 23px 0;
+  padding: 22px 0;
+  padding-top: 23px;
+  padding-bottom: 21px;
 
   box-sizing: border-box;
-  border-bottom: 1px solid #fafafa;
-  border-bottom-color: red;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .nav__link {
+  display: flex;
+  align-self: center;
   text-decoration: none;
 
   color: black;

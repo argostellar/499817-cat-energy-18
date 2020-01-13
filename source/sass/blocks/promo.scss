@@ -38,15 +38,14 @@
 }
 
 .promo__link {
-  display: block;
-  width: 100%;
+  @include mobile-space;
+  align-self: stretch;
+  box-sizing: border-box;
+  margin-top: 3px;
+  padding-top: 11px;
 }
 
 .promo__image {
-  @include empty-rule;
-}
-
-.promo__image--can {
   @include empty-rule;
 }
 

@@ -3,11 +3,14 @@
 }
 
 .map__info {
+  @include mobile-space;
   @include flex-row;
   justify-content: space-between;
+  padding: 28px 0;
 }
 
 .map__invitation-text {
+  @include reset-space;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -16,6 +19,7 @@
 }
 
 .map__address {
+  @include reset-space;
   @include arial-text;
   line-height: 20px;
 }
