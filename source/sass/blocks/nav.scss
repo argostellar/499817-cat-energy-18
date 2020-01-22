@@ -45,16 +45,36 @@
 
   .nav__list {
     flex-direction: row;
-    align-items: flex-end;
-    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+
+    min-width: 454px;
   }
 
   .nav__item {
-    margin: 0 10px;
+    min-height: 20px;
+    flex-grow: 0;
+
+    margin: 0;
+    margin-left: 15px;
+
+    border-bottom: none;
+  }
+
+  .nav__item--current {
+    align-self: start;
+    padding-bottom: 0;
+  }
+
+  .nav__item--current .nav__inner-wrapper {
+    padding-bottom: 7px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #68b738;
   }
 
   .nav__link {
-    padding: 0 10px;
+    padding: 0;
 
     font-size: 18px;
     line-height: 24.86px;

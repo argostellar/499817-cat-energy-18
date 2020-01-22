@@ -33,18 +33,26 @@
   .main-header {
     @include flex-row;
     @include tablet-space;
+    padding-top: 20px;
+    border-bottom: none;
   }
 
   .main-header__wrapper {
     padding: 0;
+    border-bottom: none;
   }
 
   .main-header__logo-link {
     margin-right: 10px;
   }
 
+  .main-header__logo-image {
+    width: 173px;
+    height: 58px;
+  }
+
   .main-header__textlogo-link {
-    margin-left: 10px;
+    display: none;
   }
 
   .main-header__button {

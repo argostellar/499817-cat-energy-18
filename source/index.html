@@ -13,7 +13,11 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a href="#" class="main-header__logo-link">
-        <img src="img/logo-mobile.png" class="main-header__logo-image" alt="Логотип Кэт Энерджи" width="33" height="38">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+          <img src="img/logo-mobile.png" class="main-header__logo-image" alt="Логотип Кэт Энерджи" width="33" height="38">
+        </picture>
       </a>
       <a href="#" class="main-header__textlogo-link">
         <img src="img/logo-mobile-header.png" class="main-header__textlogo-image" alt="Текстовый логотип Кэт Энерджи" width="101" height="18">
@@ -24,14 +28,20 @@
     </div>
     <nav class="main-header__nav nav">
       <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="index.html">Главная</a>
+        <li class="nav__item nav__item--current">
+          <span class="nav__inner-wrapper">
+            <a class="nav__link" href="index.html">Главная</a>
+          </span>
         </li>
         <li class="nav__item">
+          <span class="nav__inner-wrapper">
           <a class="nav__link" href="catalog.html">Каталог продукции</a>
+        </span>
         </li>
         <li class="nav__item">
+          <span class="nav__inner-wrapper">
           <a class="nav__link" href="form.html">Подбор программы</a>
+        </span>
         </li>
       </ul>
     </nav>

@@ -51,7 +51,9 @@
 
 @media (min-width: $tablet-size) {
   .promo {
+    @include tablet-space;
     background-image: none;
+    margin-left: 90px;
   }
 
   .promo__wrapper {
@@ -62,7 +64,10 @@
     max-width: 427px;
 
     @include reset-space;
-    margin-bottom: 33px;
+    margin-top: 52px;
+    margin-bottom: 42px;
+
+    margin-left: -3px;
 
     @include tablet-title-font;
     color: $black;
@@ -76,6 +81,8 @@
     @include tablet-text-font;
     color: $black;
 
+    margin-left: -2px;
+
     order: 2;
   }
 
@@ -87,7 +94,7 @@
     order: 3;
   }
 
-  .promo__image--can {
+  .promo__image {
     order: 4;
   }
 }
