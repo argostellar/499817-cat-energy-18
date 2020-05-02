@@ -71,6 +71,17 @@
   line-height: 60px;
 }
 
+@mixin active-states {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 @mixin empty-rule {
   outline: 1px solid transparent;
 }
@@ -81,4 +92,8 @@
 
 @mixin yellowline {
   outline: 3px dashed yellow;
+}
+
+@mixin blackline {
+  outline: 1px solid black;
 }

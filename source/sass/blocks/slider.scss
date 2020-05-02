@@ -5,16 +5,19 @@
 
 .slider__wrapper {
   @include flex-row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   width: 210px;
 
-  margin-top: 16px;
+  margin-top: 9px;
 }
 
 .slider__image {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
+  max-width: 340px;
+  width: 320px;
+  height: 240px;
 }
 
 .slider__image--hidden {
@@ -31,19 +34,46 @@
   font-weight: 400;
 
   text-transform: uppercase;
+  margin-left: 2px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .slider__pinbar {
+  @include flex-row;
+  justify-content: space-between;
   flex-shrink: 0;
   height: 14px;
   width: 84px;
 
-  margin: 0 14px;
+  margin: 0 11px;
+
 
   box-sizing: border-box;
   border: 1px solid #cdcdcd;
   border-radius: 5px;
   background-color: #ffffff;
+}
+
+.slider__pin {
+  height: 6px;
+  width: 35px;
+
+  margin-top: 2px;
+  margin-right: auto;
+  margin-left: 7px;
+
+  background-color: $green;
+
+  border-radius: 3px;
+  border: none;
 }
 
 @media (min-width: $tablet-size) {
@@ -64,6 +94,18 @@
 
   .slider__button {
     @include tablet-text-font;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #bebebe;
+
+    &:hover,
+    &:focus {
+      text-decoration-color: #989898;
+    }
+
+    &:active {
+      text-decoration: none;
+    }
   }
 }
 

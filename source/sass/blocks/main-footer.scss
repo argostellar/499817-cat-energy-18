@@ -16,8 +16,17 @@
   @include reset-space;
   align-self: center;
   text-align: center;
-  padding-top: 39px;
-  padding-bottom: 39px;
+  padding-top: 37px;
+  padding-bottom: 31px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-footer__social {

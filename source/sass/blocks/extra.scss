@@ -3,24 +3,47 @@
 }
 
 .extra__title {
-  font-size: 24px;
-  line-height: 24px;
+  @include reset-space;
   font-weight: 400;
 
-  margin-bottom: 30px;
+  &--main {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 34px;
+    margin-left: 19px;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 14px;
+      right: 0;
+      width: 53px;
+      height: 3px;
+      background-color: $green;
+    }
+  }
 
   &--item {
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-left: 1px;
+    margin-bottom: 13px;
   }
 }
 
 .extra__list {
   @include clear-list;
+  @include mobile-space;
   @include flex-column;
   justify-content: space-around;
+  margin-bottom: 39px;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
 }
 
 .extra__item {
@@ -29,6 +52,7 @@
 
   box-sizing: border-box;
   border: 1px solid #cdcdcd;
+  border-top: none;
   border-left: none;
   border-right: none;
 
@@ -36,12 +60,19 @@
   padding-bottom: 17px;
 }
 
+.extra__item-wrapper {
+  @include flex-column;
+}
+
 .extra__table {
+  @include flex-row;
   margin-bottom: 14px;
 }
 
 .extra__table-row {
-  outline: 1px solid transparent;
+  @include flex-row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .extra__table-cell {
@@ -51,7 +82,10 @@
 }
 
 .extra__button {
-  @include empty-rule;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: $tablet-size) {

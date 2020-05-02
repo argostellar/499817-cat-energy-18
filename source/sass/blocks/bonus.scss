@@ -1,5 +1,7 @@
 .bonus {
+  @include mobile-space;
   @include flex-column;
+  margin-bottom: 36px;
 }
 
 .bonus__wrapper {
@@ -16,11 +18,13 @@
 }
 
 .bonus__gift-icon {
-  width: 61px;
-  height: 61px;
+  width: 55px;
+  height: 60px;
 
-  box-sizing: border-box;
-  border: 1px solid white;
+  background-image: url("../img/gift.png");
+  background-repeat: no-repeat;
+
+  margin-top: 41px;
 
   font-size: 12px;
   line-height: 14px;
@@ -35,8 +39,11 @@
   font-size: 16px;
   line-height: 20px;
 
+  text-indent: 12px;
+
   text-align: center;
   vertical-align: middle;
+  margin-bottom: 18px;
 }
 
 @media (min-width: $tablet-size) {

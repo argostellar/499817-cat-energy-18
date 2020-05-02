@@ -6,6 +6,7 @@
   @include mobile-space;
   @include flex-row;
   justify-content: space-between;
+  align-items: center;
   padding: 28px 0;
 }
 
@@ -22,6 +23,7 @@
   @include reset-space;
   @include arial-text;
   line-height: 20px;
+  margin-left: 25px;
 }
 
 .map__map {
@@ -29,6 +31,11 @@
   min-width: 280px;
   min-height: 362px;
   background-color: #f2f1ee;
+
+  background-image: url("../img/map-pin.png"), url("../img/map2.png");
+  background-position: right 50% top 136px, 40% 70%;
+  background-repeat: no-repeat;
+  background-size: 55px 53px, auto;
 }
 
 @media (min-width: $tablet-size) {

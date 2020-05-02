@@ -4,6 +4,18 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
+.main-header__logo-link {
+  margin-right: -12px;
+  margin-left: -3px;
+  margin-top: -3px;
+
+  @include active-states;
+}
+
+.main-header__textlogo-link {
+  @include active-states;
+}
+
 .main-header__wrapper {
   @include flex-row;
   justify-content: space-between;
@@ -21,11 +33,15 @@
   width: 18px;
   height: 18px;
 
+  margin-right: -1px;
+
   color: $green;
   border-style: none;
-  background-color: #ffffff;
+  background-color: $white;
   background-image: url("../img/m-close.png");
   background-repeat: no-repeat;
+
+  @include active-states;
 }
 
 

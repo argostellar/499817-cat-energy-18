@@ -24,12 +24,12 @@
 
 body {
   @include reset-space;
-  background-color: #ffffff;
+  background-color: $white;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  color: #111111;
+  color: $black;
 
   min-width: $mobile-size;
 

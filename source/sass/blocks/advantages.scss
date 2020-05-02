@@ -32,6 +32,31 @@
   margin-left: 0;
 }
 
+.advantages__image--leaf {
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__image--powder {
+  background-image: url("../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__image--dining {
+  background-image: url("../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__image--clock {
+  background-image: url("../img/advantage-clock@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 .advantages__text {
   @include reset-space;
   margin-top: 2px;
@@ -44,11 +69,13 @@
 @media (min-width: $tablet-size) {
   .advantages {
     @include empty-rule;
+    margin: 0;
+    margin-bottom: 11px;
   }
 
   .advantages__title {
     @include tablet-title-font;
-    margin-bottom: 63px;
+    margin-bottom: 72px;
   }
 
   .advantages__list {
@@ -62,13 +89,18 @@
     @include redline;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 50%;
+    max-width: 50%;
+    width: 40%;
     min-height: 228px;
+
+    margin-right: 40px;
+
+    margin-bottom: 90px;
   }
 
   .advantages__image {
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 32px;
 
     width: 80px;
     height: 80px;
@@ -79,7 +111,21 @@
     @include reset-space;
     @include tablet-arial-text;
     display: flex;
-    max-width: 210px;
+    min-width: 80%;
+    max-width: 90%;
+  }
+
+  .advantages__floater {
+    &::after {
+      @include redline;
+      content: "";
+      width: 90px;
+      height: 100px;
+      shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      background-color: red;
+      float: right;
+    }
   }
 }
 

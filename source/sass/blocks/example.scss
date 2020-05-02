@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
 
-  margin-bottom: 44px;
+  margin-bottom: 35px;
 }
 
 
@@ -106,32 +106,28 @@
 @media (min-width: $tablet-size) {
   .example {
     @include empty-rule;
+    margin: 0;
   }
 
   .example__title {
     @include tablet-title-font;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
   }
 
   .example__text {
     @include tablet-arial-text;
-    margin-bottom: 57px;
-  }
-
-  .example__central-text {
-    font-size: 30px;
-    line-height: 37.02px;
-  }
-
-  .example__description-text {
-    font-size: 14px;
-    line-height: 14px;
+    margin-bottom: 53px;
+    margin-right: 0;
+    max-width: 100%;
+    width: 97%;
   }
 
   .example__result-text {
     @include tablet-text-font;
     max-width: 180px;
     text-align: right;
+    margin-top: 7px;
+    line-height: 29px;
   }
 
   .example__statistics {
@@ -142,11 +138,25 @@
     @include flex-row;
     justify-content: space-between;
     width: 100%;
-    margin: 55px 0;
+    margin: 0;
   }
 
   .example__outer-wrapper {
-    width: auto;
+    max-width: 50%;
+  }
+
+  .example__inner-wrapper {
+    @include redline;
+  }
+
+  .example__central-text {
+    font-size: 30px;
+    line-height: 37.02px;
+  }
+
+  .example__description-text {
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
