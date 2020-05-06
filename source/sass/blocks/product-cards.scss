@@ -95,7 +95,6 @@
   }
 
   .product-cards__item {
-    @include redline;
     margin-bottom: 140px;
     width: 40%;
   }
@@ -113,14 +112,38 @@
 
     &--small {
       @include tablet-arial-text;
+      line-height: 20px;
       max-width: 210px;
-      margin-top: 27px;
+      margin-top: 25px;
       margin-bottom: 85px;
     }
   }
 
   .product-cards__symbol {
-    margin-bottom: 50px;
+    width: 60px;
+    height: 60px;
+
+    margin-top: 29px;
+    margin-bottom: 11px;
+
+    margin-left: 2px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background-color: $symbol-grey;
+    }
+  }
+
+  .product-cards__button {
+    @include reset-space;
+    padding: 10px 0;
+    margin-top: -1px;
+
+    min-height: auto;
   }
 }
 

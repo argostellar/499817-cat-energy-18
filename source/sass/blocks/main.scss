@@ -1,11 +1,10 @@
 .main {
-  @include empty-rule;
   margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-size) {
   .main {
-    @include tablet-space;
+    @include empty-rule;
   }
 }
 

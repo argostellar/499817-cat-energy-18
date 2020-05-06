@@ -97,3 +97,11 @@
 @mixin blackline {
   outline: 1px solid black;
 }
+
+@mixin violetline {
+  outline: 2px dotted violet;
+}
+
+@mixin greenline {
+  outline: 2px solid green;
+}

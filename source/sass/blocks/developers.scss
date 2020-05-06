@@ -19,17 +19,40 @@
   &:active {
     opacity: 0.4;
   }
-}
 
-.developers__link--text {
-  margin-top: -10px;
+  &--text {
+    margin-top: -10px;
+  }
 }
 
 .developers__image {
-  fill: #666666;
+  fill: $footer-grey;
 }
 
 .developers__link:hover .developers__image,
 .developers__link:focus .developers__image {
   fill: $green;
+}
+
+@media (min-width: $tablet-size) {
+  .developers {
+    margin-right: 0;
+  }
+
+  .developers__link {
+    &--text {
+      margin-top: 0;
+      margin-right: 15px;
+    }
+  }
+
+  .developers__image {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .developers {
+    @include empty-rule;
+  }
 }

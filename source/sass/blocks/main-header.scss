@@ -56,6 +56,8 @@
   .main-header__wrapper {
     padding: 0;
     border-bottom: none;
+    margin-left: 3px;
+    margin-top: 2px;
   }
 
   .main-header__logo-link {
@@ -69,6 +71,10 @@
 
   .main-header__textlogo-link {
     display: none;
+  }
+
+  .main-header__nav {
+    margin-top: 0;
   }
 
   .main-header__button {

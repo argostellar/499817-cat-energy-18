@@ -90,12 +90,53 @@
 
 @media (min-width: $tablet-size) {
   .extra {
-    @include empty-rule;
+    margin: 0;
+    margin-top: -102px;
+  }
+
+  .extra__wrapper {
+    margin: 0 10px;
+  }
+
+  .extra__title {
+    font-size: 36px;
+    line-height: 36px;
+
+    &--main {
+      margin-left: 67px;
+      margin-bottom: 80px;
+
+      background-color: $white;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 22px;
+        left: -67px;
+        width: 28px;
+        height: 3px;
+        background-color: $green;
+      }
+
+      &::after {
+        top: 22px;
+        right: 0;
+        width: 327px;
+        height: 3px;
+        background-color: $green;
+      }
+    }
+
+    &--item {
+      @include tablet-text-font;
+      margin-top: -1px;
+      margin-bottom: 19px;
+    }
   }
 
   .extra__item {
-    border-left: 1px solid #cdcdcd;
-    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid $light-grey;
+    border-right: 1px solid $light-grey;
     padding: 27px 37px;
   }
 
@@ -103,17 +144,32 @@
     @include flex-row;
     justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 8px;
   }
 
-  .extra__title {
-    font-size: 36px;
-    line-height: 36px;
+  .extra__table {
+    margin-left: auto;
+  }
 
-    &--item {
-      @include tablet-text-font;
-      margin-top: 0;
-      margin-bottom: 27px;
-    }
+  .extra__table-row {
+    @include empty-rule;
+  }
+
+  .extra__table-cell {
+    min-width: 45px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    vertical-align: middle;
+
+    margin-left: 50px;
+  }
+
+  .extra__button {
+    padding: 10px 0;
+    min-height: auto;
+    margin-top: -2px;
   }
 }
 

@@ -22,7 +22,6 @@
 }
 
 .card__image {
-  @include empty-rule;
   height: 100%;
 }
 
@@ -54,7 +53,7 @@
   font-size: 16px;
   line-height: 20px;
 
-  margin-top: -0;
+  margin-top: 0;
 
   padding-top: 9px;
   padding-bottom: 9px;
@@ -62,30 +61,67 @@
 
 @media (min-width: $tablet-size) {
   .card {
+    background-color: $button-grey;
     min-width: 324px;
-    background-color: #f2f2f2;
     min-height: 431px;
+
     padding: 40px 37px;
-  }
-
-  .card__wrapper {
-    @include yellowline;
-    @include flex-column;
-  }
-
-  .card__image-wrapper {
-    min-height: 120px;
-  }
-
-  .card__table-wrapper {
-    @include empty-rule;
   }
 
   .card__title {
     @include tablet-text-font;
-    max-width: 110px;
     text-align: center;
     align-self: center;
+
+    max-width: 130px;
+
+    margin-top: -2px;
+    margin-bottom: 27px;
+  }
+
+  .card__wrapper {
+    @include flex-column;
+    justify-content: center;
+    margin: 0;
+    min-height: 350px;
+  }
+
+  .card__table-wrapper {
+    margin-top: -20px;
+  }
+
+  .card__image-wrapper {
+    width: auto;
+    height: 100px;
+
+    position: relative;
+  }
+
+  .card__image {
+    width: auto;
+    height: auto;
+
+    max-width: 130%;
+
+    position: absolute;
+
+    top: -131px;
+    left: -37px;
+
+    &--large {
+      top: -167px;
+    }
+  }
+
+  .card__button {
+    @include reset-space;
+    height: auto;
+    min-height: auto;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    margin-top: -45px;
   }
 }
 

@@ -13,15 +13,15 @@
 }
 
 .options__placeholder {
+  position: absolute;
+  top: 25px;
+  left: 22px;
+
   width: 50px;
   height: 50px;
 
   background-color: #68b738;
   border-radius: 50%;
-
-  position: absolute;
-  top: 25px;
-  left: 22px;
 }
 
 .options__icon {
@@ -57,14 +57,14 @@
 
   text-transform: uppercase;
   text-align: center;
-}
 
-.options__item--pro .options__title {
-  margin-left: 40px;
-}
+  &--slim {
+    margin-left: 10px;
+  }
 
-.options__item--slim .options__title {
-  margin-left: 10px;
+  &--pro {
+    margin-left: 40px;
+  }
 }
 
 .options__text {
@@ -146,43 +146,37 @@
 
 @media (min-width: $tablet-size) {
   .options {
-    @include empty-rule;
-    margin: 0;
-    margin-bottom: 48px;
+    @include tablet-space;
+    margin-bottom: 46px;
   }
 
   .options__item {
+    @include flex-column;
+    position: relative;
     margin-top: 0;
     margin-bottom: 30px;
     padding: 45px;
     padding-top: 65px;
     padding-left: 53px;
     padding-bottom: 61px;
-
-    @include flex-column;
-    @include redline;
-
-    position: relative;
   }
 
   .options__placeholder {
+    position: absolute;
+    left: 0;
     width: 200px;
     height: 200px;
     order: 2;
 
-    @include redline;
+    &--slim {
+      left: 446px;
+      top: 92px;
+    }
 
-    position: absolute;
-  }
-
-  .options__item--slim .options__placeholder {
-    right: 62px;
-    top: 92px;
-  }
-
-  .options__item--pro .options__placeholder {
-    right: 60px;
-    top: 91px;
+    &--pro {
+      left: 448px;
+      top: 91px;
+    }
   }
 
   .options__icon {
@@ -213,20 +207,26 @@
   .options__title {
     font-size: 36px;
     text-align: left;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
+    margin-left: 0;
+
+    &--pro {
+      margin-top: 23px;
+    }
   }
 
   .options__text {
     @include tablet-arial-text;
     margin-top: 0;
-  }
+    margin-bottom: 23px;
 
-  .options__item--slim .options__text {
-    max-width: 375px;
-  }
+    &--slim {
+      max-width: 375px;
+    }
 
-  .options__item--pro .options__text {
-    max-width: 340px;
+    &--pro {
+      max-width: 340px;
+    }
   }
 
   .options__link {
@@ -236,8 +236,20 @@
     order: 4;
 
     &::after {
-      width: 100px;
-      background-color: black;
+      right: initial;
+      top: 5px;
+    }
+
+    &--slim {
+      &::after {
+        left: 131px;
+      }
+    }
+
+    &--pro {
+      &::after {
+        left: 125px;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 .example {
   @include mobile-space;
-  background-color: #f2f2f2;
+  background-color: $button-grey;
 }
 
 .example__title {
@@ -53,7 +53,7 @@
 
   box-sizing: border-box;
   border-radius: 3px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $light-grey;
 }
 
 .example__central-text {
@@ -87,7 +87,7 @@
 
   z-index: 2;
 
-  background-color: #f2f2f2;
+  background-color: $button-grey;
 }
 
 .example__result-text {
@@ -105,11 +105,12 @@
 
 @media (min-width: $tablet-size) {
   .example {
-    @include empty-rule;
     margin: 0;
+    background-color: transparent;
   }
 
   .example__title {
+    @include tablet-space;
     @include tablet-title-font;
     margin-bottom: 64px;
   }
@@ -131,7 +132,8 @@
   }
 
   .example__statistics {
-    @include empty-rule;
+    @include tablet-space;
+    margin-bottom: 220px;
   }
 
   .example__statistics-wrapper {
@@ -142,21 +144,28 @@
   }
 
   .example__outer-wrapper {
-    max-width: 50%;
+    max-width: 366px;
   }
 
   .example__inner-wrapper {
-    @include redline;
+    width: 162px;
+    min-height: 72px;
+    justify-content: space-between;
   }
 
   .example__central-text {
     font-size: 30px;
     line-height: 37.02px;
+    margin-top: 14px;
   }
 
   .example__description-text {
     font-size: 14px;
     line-height: 14px;
+    max-width: 127px;
+    margin-top: 18px;
+
+    background-color: $white;
   }
 }
 

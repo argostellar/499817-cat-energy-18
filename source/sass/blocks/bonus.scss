@@ -39,17 +39,18 @@
   font-size: 16px;
   line-height: 20px;
 
-  text-indent: 12px;
-
   text-align: center;
   vertical-align: middle;
   margin-bottom: 18px;
 }
 
+.bonus__break {
+  display: inline;
+}
+
 @media (min-width: $tablet-size) {
   .bonus {
-    @include empty-rule;
-    margin-bottom: 76px;
+    margin-bottom: 111px;
     margin-top: 69px;
   }
 
@@ -58,14 +59,27 @@
     min-height: 200px;
 
     @include flex-row;
-    justify-content: space-around;
+    justify-content: space-between;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
 
+  .bonus__gift-icon {
+    margin-top: -11px;
+    margin-right: auto;
+    margin-left: 91px;
+  }
+
   .bonus__text {
     text-align: left;
-    max-width: 175px;
+
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: 120px;
+  }
+
+  .bonus__break {
+    display: inline;
   }
 }
 
