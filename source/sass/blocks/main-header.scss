@@ -84,7 +84,17 @@
 
 @media (min-width: $desktop-size) {
   .main-header {
-    @include redline;
     @include desktop-space;
+
+    padding-top: 50px;
+  }
+
+  .main-header__logo-image {
+    width: 202px;
+    height: 59px;
+  }
+
+  .main-header__logo-link {
+    margin-top: -2px;
   }
 }

@@ -72,7 +72,7 @@
   .nav__item--current .nav__inner-wrapper {
     padding-bottom: 7px;
     box-sizing: border-box;
-    border-bottom: 2px solid #68b738;
+    border-bottom: 2px solid $green;
   }
 
   .nav__link {
@@ -90,10 +90,24 @@
   }
 
   .nav__item {
-    background-color: $green;
+    margin-left: 34px;
+  }
+
+  .nav__item--current .nav__inner-wrapper {
+    padding-bottom: 9px;
+  }
+
+  .nav__item--current--main .nav__inner-wrapper {
+    padding-bottom: 9px;
+    box-sizing: border-box;
+    border-bottom: 2px solid $white;
   }
 
   .nav__link {
+    font-size: 20px;
+  }
+
+  .nav__list--main .nav__link {
     color: $white;
     font-size: 20px;
   }

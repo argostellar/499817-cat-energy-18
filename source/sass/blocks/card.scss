@@ -134,6 +134,15 @@
     width: 169px;
   }
 
+  .card__image {
+    max-width: 155%;
+    top: -130px;
+
+    &--large {
+      top: -166px;
+    }
+  }
+
   .card__button {
     width: 169px;
   }

@@ -34,7 +34,6 @@
 }
 
 .map__map {
-  @include yellowline;
   min-width: 280px;
   min-height: 362px;
   background-color: $map-bg-color;
@@ -118,20 +117,29 @@
 
     position: absolute;
 
-    left: 40px;
-    top: 95px;
+    left: 90px;
+    top: 94px;
 
     background-color: $white;
   }
 
   .map__invitation-text {
     margin: 0;
-    margin-left: 0;
+    margin-top: 5px;
+    margin-left: 1px;
   }
 
   .map__address {
     margin: 0;
-    margin-right: 0;
+    margin-right: 16px;
     text-align: left;
+  }
+
+  .map__map {
+    min-height: 396px;
+    background-image: url("../img/map-pin.png"), url("../img/bg-map-desktop@1x.png");
+    background-position: right 323px top 150px, 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 113px 106px, auto;
   }
 }

@@ -256,13 +256,89 @@
 
 @media (min-width: $desktop-size) {
   .options {
+    @include reset-space;
+    @include desktop-container;
     @include flex-row;
+    justify-content: space-between;
+    margin-bottom: 72px;
+  }
+
+  .options__wrapper {
     justify-content: space-between;
   }
 
   .options__item {
-    @include redline;
-    max-width: 570px;
+    @include reset-space;
+    width: 570px;
+    min-height: 372px;
+    box-sizing: border-box;
     padding: 50px;
+
+    &--slim {
+      margin-right: auto;
+    }
+
+    &--pro {
+      margin-left: auto;
+    }
+  }
+
+  .options__placeholder {
+    top: 47px;
+    left: 52px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .options__icon {
+    &--slim {
+      top: -6px;
+      left: 14px;
+      width: 70px;
+      height: 97px;
+    }
+
+    &--pro {
+      top: 22px;
+      left: -85px;
+      width: 134px;
+      height: 56px;
+    }
+  }
+
+  .options__title {
+    @include reset-space;
+    margin-top: 37px;
+    margin-bottom: 85px;
+    margin-left: 164px;
+  }
+
+  .options__text {
+    max-width: 470px;
+    margin-bottom: 20px;
+    padding-left: 2px;
+  }
+
+  .options__link {
+    padding-left: 2px;
+    margin-top: 10px;
+
+    &::after {
+      right: initial;
+      top: 5px;
+    }
+
+    &--slim {
+      &::after {
+        top: 4px;
+        left: 134px;
+      }
+    }
+
+    &--pro {
+      &::after {
+        left: 128px;
+      }
+    }
   }
 }

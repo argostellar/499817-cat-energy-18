@@ -41,15 +41,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-@media (min-width: $tablet-size) {
-  .main {
-    @include empty-rule;
-  }
-}
-
-@media (min-width: $desktop-size) {
-  .main {
-    @include empty-rule;
-  }
-}

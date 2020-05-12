@@ -85,7 +85,7 @@
 
 @media (min-width: $desktop-size) {
   .bonus {
-    @include empty-rule;
+    margin: 0;
   }
 
   .bonus__wrapper {
@@ -101,11 +101,14 @@
   }
 
   .bonus__text {
+    margin: 0;
+    margin-bottom: 42px;
     text-align: center;
-    max-width: 175px;
+    max-width: 195px;
   }
 
   .bonus__gift-icon {
-    @include empty-rule;
+    margin-top: 65px;
+    margin-left: 96px;
   }
 }

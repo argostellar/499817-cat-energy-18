@@ -109,14 +109,16 @@
 
     margin-top: -40px;
     margin-bottom: -40px;
-    margin-left: -29px;
+    margin-left: -44px;
     order: 4;
   }
 }
 
 @media (min-width: $desktop-size) {
   .promo {
-    @include redline;
+    @include reset-space;
+    @include desktop-container;
+    margin-bottom: 268px;
   }
 
   .promo::after {
@@ -135,8 +137,32 @@
     z-index: -1;
   }
 
+  .promo__wrapper {
+    position: relative;
+  }
+
+  .promo__title {
+    margin-top: 104px;
+    margin-left: 80px;
+  }
+
+  .promo__text {
+    margin-left: 80px;
+  }
+
+  .promo__link {
+    margin-top: 24px;
+    margin-left: 80px;
+  }
+
 
   .promo__image {
+    position: absolute;
+    top: 52px;
+    right: 109px;
+    width: 552px;
+    height: 499px;
     align-self: flex-end;
+    z-index: 1;
   }
 }

@@ -70,6 +70,23 @@
 
 @media (min-width: $desktop-size) {
   .main-footer {
-    @include desktop-space;
+    @include empty-rule;
+  }
+
+  .main-footer__contacts {
+    @include desktop-container;
+    margin-top: 27px;
+  }
+
+  .main-footer__text-logo {
+    margin-top: -4px;
+  }
+
+  .main-footer__social {
+    margin-top: -1px;
+  }
+
+  .main-footer__developers {
+    margin-top: 0;
   }
 }

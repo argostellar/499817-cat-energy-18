@@ -41,4 +41,10 @@
   .table {
     @include empty-rule;
   }
+
+  .table__row {
+    height: 22px;
+    border-bottom: 1px solid $light-grey;
+    margin-bottom: 9px;
+  }
 }

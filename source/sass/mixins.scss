@@ -52,6 +52,12 @@
   max-width: 1220px;
 }
 
+@mixin desktop-container {
+  width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
 @mixin font-family {
   font-family: "Oswald", "Arial", sans-serif;
 }

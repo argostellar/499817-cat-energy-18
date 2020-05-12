@@ -14,8 +14,8 @@
     <div class="main-header__wrapper">
       <a href="#" class="main-header__logo-link">
         <picture>
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img src="img/logo-mobile.png" class="main-header__logo-image" alt="Логотип Кэт Энерджи" width="33" height="38">
         </picture>
       </a>
@@ -55,7 +55,7 @@
           <div class="forms__wrapper forms__wrapper--personal">
             <div class="forms__inner-wrapper">
               <label class="forms__label" for="name">Имя:*</label>
-              <input class="forms__input forms__input--personal" type="text" name="name" id="name" placeholder="Барсик" required>
+              <input class="forms__input forms__input--personal forms__input--personal--text" type="text" name="name" id="name" placeholder="Барсик" required>
             </div>
             <div class="forms__inner-wrapper">
               <label class="forms__label" for="weight">Вес (кг):*</label>
@@ -194,7 +194,7 @@
           <p class="map__address-line map__address-line--bottom">Санкт-Петербург</p>
         </div>
       </div>
-      <div class="map__map">Map - NB: Отступов слева-справа нет
+      <div class="map__map">
       </div>
     </section>
     <section class="main-footer__contacts">

@@ -40,6 +40,13 @@
 
 @media (min-width: $desktop-size) {
   .catalog {
+    margin-bottom: 87px;
+  }
+
+  .catalog__title {
+    @include reset-space;
     @include desktop-space;
+    margin-top: 70px;
+    margin-bottom: 165px;
   }
 }

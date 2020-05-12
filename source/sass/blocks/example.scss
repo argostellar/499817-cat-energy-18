@@ -171,16 +171,25 @@
 
 @media (min-width: $desktop-size) {
   .example {
-    @include empty-rule;
+    background-image: linear-gradient(to bottom, $white 22.5%, $button-grey 22.5%);
+  }
+
+  .example__title {
+    @include desktop-container;
+    margin-bottom: 76px;
   }
 
   .example__wrapper {
+    @include desktop-container;
     @include flex-row;
     justify-content: space-between;
-    background-color: #eaeaea;
+    background-color: $button-grey;
   }
 
   .example__statistics {
+    background-color: $button-grey;
+    justify-content: space-between;
+    margin: 0;
     max-width: 570px;
   }
 
@@ -188,6 +197,7 @@
     @include flex-column;
     justify-content: space-between;
     width: 366px;
+    margin-bottom: 30px;
   }
 
   .example__outer-wrapper {
@@ -200,13 +210,24 @@
   }
 
   .example__text {
-    max-width: 435px;
-    margin-bottom: 72px;
+    max-width: 445px;
+    margin-top: 70px;
+    margin-bottom: 0;
   }
 
   .example__result-text {
     text-align: left;
     max-width: 100%;
     align-self: flex-start;
+    margin-top: 22px;
+    margin-bottom: 40px;
+  }
+
+  .example__result-price {
+    margin-left: 59px;
+  }
+
+  .example__description-text {
+    background-color: $button-grey;
   }
 }

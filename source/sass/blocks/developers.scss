@@ -54,5 +54,6 @@
 @media (min-width: $desktop-size) {
   .developers {
     @include empty-rule;
+    margin-top: 0;
   }
 }

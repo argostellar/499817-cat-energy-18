@@ -180,11 +180,31 @@
 
 @media (min-width: $desktop-size) {
   .advantages {
-    @include empty-rule;
+    @include desktop-container;
+    margin-bottom: 72px;
+
+    &::after {
+      border: none;
+    }
+  }
+
+  .advantages__title {
+    margin-left: 0;
+    margin-bottom: 73px;
+  }
+
+  .advantages__list {
+    @include reset-space;
+    justify-content: space-between;
   }
 
   .advantages__item {
-    width: 25%;
+    max-width: 245px;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .advantages__text {
     max-width: 245px;
   }
 }

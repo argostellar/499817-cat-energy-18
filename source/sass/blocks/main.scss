@@ -10,6 +10,6 @@
 
 @media (min-width: $desktop-size) {
   .main {
-    @include desktop-space;
+    margin-bottom: 0;
   }
 }

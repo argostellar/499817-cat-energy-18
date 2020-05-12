@@ -205,6 +205,26 @@
 
 @media (min-width: $desktop-size) {
   .slider {
-    width: 650px;
+    width: 570px;
+    background-image: linear-gradient(to right, $slider-lightgrey 50%, $slider-darkgrey 50%, $slider-lightgrey 100%);
+  }
+
+  .slider__image-wrapper {
+    margin-left: -81px;
+  }
+
+  .slider__image {
+    height: 517px;
+    max-width: 130%;
+    margin-bottom: 25px;
+  }
+
+  .slider__pin {
+    margin-bottom: 2px;
+    margin-right: -6px;
+  }
+
+  .slider__button {
+    margin: 0;
   }
 }
